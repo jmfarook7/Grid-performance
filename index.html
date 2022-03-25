@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Typescript Components</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="node_modules/@syncfusion/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="./styles/grid/material.css" rel="stylesheet" />
+    <link href="./styles/pager/material.css" rel="stylesheet" />
+    <link href="./styles/excel-filter/material.css" rel="stylesheet" />
+    <link href="node_modules/@syncfusion/ej2-splitbuttons/styles/material.css" rel="stylesheet" />
+    <link href="node_modules/@syncfusion/ej2-buttons/styles/material.css" rel="stylesheet" />
+    <link href="node_modules/@syncfusion/ej2-inputs/styles/material.css" rel="stylesheet" />
+    <link href="node_modules/@syncfusion/ej2-navigations/styles/material.css" rel="stylesheet" />
+    <link href="node_modules/@syncfusion/ej2-calendars/styles/material.css" rel="stylesheet" />
+    <link href="node_modules/@syncfusion/ej2-dropdowns/styles/material.css" rel="stylesheet" />
+    <link href="node_modules/@syncfusion/ej2-lists/styles/material.css" rel="stylesheet" />
+    <link href="node_modules/@syncfusion/ej2-popups/styles/material.css" rel="stylesheet" />
+    
+    <script>
+        window.__karma__ = { files: {} };
+        window.require = {
+            config: function (json) {
+            window.rsConfig = json;
+                window.rsConfig.baseUrl = '';
+            }
+        };
+    </script>
+<script src="./test-main.js"></script>
+ 
+<script src="./node_modules/requirejs/require.js" data-main="gridrequire.js"></script>
+
+<script>
+        require.config(window.rsConfig);
+</script>
+
+
+
+    
+
+<button id='render'>renderGrid</button>
+<button id='destroy'>destroyGrid</button>
+
+<span id="performanceTime">Initial Load Time Taken: 0 ms</span>
+</br>
+<span id="performanceTime1"> Grid Action Taken Time : 0 ms</span>
+
+</div>
+    <div id='Grid'></div>
+</div>
+
+</script>
+
+</body>
+
+</html>
